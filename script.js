@@ -1,5 +1,6 @@
 let main = document.querySelector("main");
 let btn = document.querySelector("button");
+let reload = document.querySelector("#reload");
 let arr = [
   "Hello, World!",
   "Access Denied.",
@@ -31,3 +32,7 @@ btn.addEventListener("click", function () {
 
   main.appendChild(h1);
 });
+
+reload.addEventListner('click', () => {
+  window.location.reload();
+})
